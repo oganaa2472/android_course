@@ -13,4 +13,21 @@ fun main(){
 
     println(sub(1,3))
 
+    val subtractNumbers: (Int,Int)-> Int = {firstNumber,secondNumber ->
+        // return firstNumber=secondNumber
+        if(firstNumber>secondNumber) {
+            firstNumber - secondNumber
+        }
+        else {
+            secondNumber - firstNumber
+        }
+    }
+
+    println(subtractNumbers(1,3))
+
+    val square: (Int) -> Int = {data->
+        data*data
+    }
+    val sq: (Int) -> Int = {it*it};
+    println(square(1))
 }
